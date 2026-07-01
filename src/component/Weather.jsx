@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import wetherImg from '../assets/rain.png'
 import humidity  from '../assets/humidity.png'
 import wind from '../assets/wind.png'
 import { useState } from 'react'
 
-export function Weather({weather}){
-  
+export function Weather({weather,forecast}){
+    
     return(
       <>
         {weather && weather.current && weather.current.condition &&(<div className="weather">
@@ -28,6 +29,9 @@ export function Weather({weather}){
               </div>
             </div>
           </div>
+          <Link to={`/forecast/${weather.location.lat},${weather.location.lon}`}>
+            <button className='dayForecast'>3-Days Forecast</button>
+          </Link>
       </div>
       )}
     </>
