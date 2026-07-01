@@ -16,7 +16,8 @@ function App() {
       }
 
       try{
-      const res= await axios.get(`http://api.weatherapi.com/v1/current.json?key=e933eef8c2604a57ad2133122263006&q=${city}&aqi=no`)
+      const apikey=import.meta.env.VITE_API_KEY
+      const res= await axios.get(`https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${city}&aqi=no`)
       setWeather(res.data);
       setCity('')
       } catch(err){
