@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import wetherImg from '../assets/rain.png'
 import humidity  from '../assets/humidity.png'
 import wind from '../assets/wind.png'
 import { useState } from 'react'
+import './Weather.css'
 
 export function Weather({weather,forecast}){
     
@@ -18,14 +18,14 @@ export function Weather({weather,forecast}){
               <img src={humidity}  />
               <div className="humidity-details">
                 <p className='humidity'>{weather.current.humidity}%</p>
-                <p>humidity</p>
+                <p className='humidity-pra'>humidity</p>
               </div>
             </div>
             <div className="section">
               <img src={wind}  />
               <div className="wind-details">
                 <p className='wind'>{weather.current.wind_kph}km/h</p>
-                <p>wind speed</p>
+                <p className='wind-pra'>wind speed</p>
               </div>
             </div>
           </div>

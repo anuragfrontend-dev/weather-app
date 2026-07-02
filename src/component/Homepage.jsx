@@ -44,12 +44,9 @@ export function Homepage() {
       }
     }
   return (
-    <>
-    <div className="container">
+    <div className="cart">
       <HeadSection city={city} setCity={setCity} getWeather={getWeather}/>
       <Weather weather={weather} />
     </div>
-    
-    </>
   )
 }

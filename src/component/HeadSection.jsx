@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import axios from 'axios'
 import searchIcon from '../assets/search.png'
-import { Weather } from './Weather'
+import './HeadSection.css'
+
 export function HeadSection({city,setCity,getWeather}){
-    
     
     return(
         <div className="header-Section">

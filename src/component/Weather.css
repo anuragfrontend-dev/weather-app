@@ -1,0 +1,76 @@
+.weatherImg{
+    width: 100px;
+    margin-top: 10px;
+}
+
+.temp{
+    margin-top: -5px;
+}
+
+.weather-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.temp{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.section img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+.section{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.wind{
+    font-size: 18px;
+    margin-top: -6px;
+    margin-bottom: 0;
+}
+
+.wind-pra{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.humidity{
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.humidity-pra{
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.weather-name{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.dayForecast{
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
