@@ -7,54 +7,11 @@
     margin-top: -5px;
 }
 
-.weather-details{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-}
 
 .temp{
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 0px;
-}
-
-.section img{
-    width: 40px;
-    margin-right: 10px;
-}
-
-
-.section{
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-.wind{
-    font-size: 18px;
-    margin-top: -6px;
-    margin-bottom: 0;
-}
-
-.wind-pra{
-    margin-bottom: 0;
-    margin-top: 0;
-    font-size: 18px;
-    font-weight: 400;
-
-}
-
-.humidity{
-    font-size: 18px;
-    margin-bottom: 0px;
-    font-weight: 400;
-}
-
-.humidity-pra{
-    margin-top: 0;
-    font-size: 18px;
 }
 
 .weather-name{
@@ -65,8 +22,50 @@
     margin-bottom: 0;
 }
 
+.weather-details {
+  display: flex; 
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.section img {
+  width: 35px;
+  flex-shrink: 0;
+}
+
+.humidity-details, .wind-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2;
+  margin-left: 10px;
+}
+
+.humidity, .wind {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1;
+}
+
+.humidity-pra, .wind-pra {
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+
 .dayForecast{
-    margin-top: 10px;
+    margin-top: 15px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     padding: 5px;

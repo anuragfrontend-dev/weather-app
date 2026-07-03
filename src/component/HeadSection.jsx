@@ -4,6 +4,14 @@ import searchIcon from '../assets/search.png'
 import './HeadSection.css'
 
 export function HeadSection({city,setCity,getWeather}){
+    const keyHandler=(event)=>{
+        if(event.key==='Enter'){
+            getWeather();
+        }
+        else if(event.key==='Escape'){
+            setCity('');
+        }
+    }
     
     return(
         <div className="header-Section">
@@ -12,6 +20,7 @@ export function HeadSection({city,setCity,getWeather}){
             className='search-bar'
             onChange={(e)=>setCity(e.target.value)}
             value={city}
+            onKeyDown={keyHandler}
             />
             <button className='search-button' onClick={getWeather}>
                 <img src={searchIcon} className='search-icon'/>

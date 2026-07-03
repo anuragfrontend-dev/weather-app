@@ -10,12 +10,12 @@
     border-radius: 30px;
     border: none;
     margin-right: 10px;
-    font-size: 16px;
+    font-size: 13px;
     outline: none;
 }
 
 .search-icon{
-    width: 20px;
+    height: 15px;
     object-fit: cover;
 }
 

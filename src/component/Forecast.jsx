@@ -13,7 +13,6 @@ export function Forecast() {
             try {
                 const key = import.meta.env.VITE_API_KEY;
                 const res = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=3`);
-                console.log("API Response:", res.data);
                 setForecast(res.data);
             } catch (err) {
                 console.log("API Error:", err);

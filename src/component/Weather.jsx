@@ -30,7 +30,7 @@ export function Weather({weather,forecast}){
             </div>
           </div>
           <Link to={`/forecast/${weather.location.lat},${weather.location.lon}`}>
-            <button className='dayForecast'>3-Days Forecast</button>
+            <button className='dayForecast'>3-Day Forecast</button>
           </Link>
       </div>
       )}
