@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Weather } from "./Weather";
 import { HeadSection } from "./HeadSection";
 import axios from "axios";
+import './Homepage.css';
+import { Form } from "react-router-dom";
 
 export function Homepage() {
   const[city,setCity]=useState('');

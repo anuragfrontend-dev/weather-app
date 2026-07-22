@@ -1,3 +1,7 @@
+.weather-container{
+  text-align: center;
+}
+
 .weatherImg{
     width: 100px;
     margin-top: 10px;

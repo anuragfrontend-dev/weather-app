@@ -8,7 +8,7 @@ import './Weather.css'
 export function Weather({weather,forecast}){
     
     return(
-      <>
+      <div className='weather-container'>
         {weather && weather.current && weather.current.condition &&(<div className="weather">
           <img src={weather.current.condition.icon} className='weatherImg'/>
           <h1 className='temp'>{weather.current.temp_c}°C</h1>
@@ -34,6 +34,6 @@ export function Weather({weather,forecast}){
           </Link>
       </div>
       )}
-    </>
+    </div>
   )
 }

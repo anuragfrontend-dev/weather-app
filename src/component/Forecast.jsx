@@ -26,7 +26,6 @@ export function Forecast() {
 
     if (loading) return <h2 className='errorContainer'>Loading...</h2>;
 
-    // 👇 Bas ye condition sahi kar di
     if (!forecast?.forecast?.forecastday?.length) {
         return (
             <div className='errorContainer'>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 import searchIcon from '../assets/search.png'
+import weatherIcon from '../assets/weather-icon.png'
 import './HeadSection.css'
 
 export function HeadSection({city,setCity,getWeather}){
@@ -14,7 +15,12 @@ export function HeadSection({city,setCity,getWeather}){
     }
     
     return(
-        <div className="header-Section">
+        <>
+        <div className="head-section">
+            <img src={weatherIcon} className="wether-icon" />
+            <h1 className="title">Weather App</h1>
+        </div>
+        <div className="search-section">
             <input type="text" 
             placeholder='Enter city name:' 
             className='search-bar'
@@ -26,5 +32,6 @@ export function HeadSection({city,setCity,getWeather}){
                 <img src={searchIcon} className='search-icon'/>
             </button>
         </div>
+        </>
     )
 }

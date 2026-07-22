@@ -1,4 +1,19 @@
-.header-Section{
+.head-section{
+    display: flex;
+}
+
+.wether-icon{
+  height: 45px;
+}
+
+.title{
+  font-size: 24px;
+  padding-left: 0;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.search-section{
     display: flex;
     justify-content: space-between;
 }
